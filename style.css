@@ -81,6 +81,13 @@ h1 {
 
 .gallery {
     display: flex;
+    /* align-items: flex-start;
+    permet d'éviter de mettre 
+    margin-bottom:auto; 
+    dans .sidebar_partage
+    Par défaut, flex met 
+    align-items en stretch
+     */
 }
 
 
@@ -123,7 +130,7 @@ Solution AVEC display:grid
 
 .img_multiple {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
 
